@@ -22,7 +22,7 @@ app.post("/api/register", async (req, res) => {
   }
 });
 
-app.get("/api/allusers", async (req, res) => {
+app.get("/api/getallusers", async (req, res) => {
   try {
     const users = await USER_MODEL.find();
 
